@@ -1,0 +1,9 @@
+99cb4c647b09b21b8100e4d2e41f0ffb *DESCRIPTION
+88c65034f33fd50d4b195a997bb87da9 *NAMESPACE
+1af967df737db86fcc4338bcf8aa2f53 *R/coinmarketcapr.R
+701759407fb468dd9c0951f42afe790e *README.md
+8260bdb03d6728fd37a0a8ca5969f30d *man/get_global_marketcap.Rd
+1358ebf4679ddc17380db13d8f2d1016 *man/get_marketcap_ticker_all.Rd
+2dc38c709c8862812efd929edfefec32 *man/plot_top_5_currencies.Rd
+de77d29ca907bb42595dbf6873d40d83 *tests/testthat.R
+f677167882efe8ca5aa47d21f15bd954 *tests/testthat/test-fun.R

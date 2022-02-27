@@ -39,13 +39,16 @@ get_global_marketcap <- function(currency = "USD", latest = TRUE, ...) {
     ## Build Request (new API) ##########
     if (latest) {
         what <- paste0("global-metrics/quotes/latest?convert=", currency)
+
     } else {
         what <- paste0("global-metrics/quotes/historical?convert=", currency)
-        whatelse <- list(...)
-        whatelse <- transform_args(whatelse)
-        what <- paste0(what, "&", whatelse)
+
     }
 
+
+    whatelse <- list(...)
+    whatelse <- transform_args(whatelse)
+    what <- paste0(what, "&", whatelse)
     apiurl <- sprintf("https://%s/v1/%s", base_url, what)
 
     ## Make Request ##########
@@ -58,3 +61,4 @@ get_global_marketcap <- function(currency = "USD", latest = TRUE, ...) {
     # browser()
     modify_result(req$content)
 }
+
